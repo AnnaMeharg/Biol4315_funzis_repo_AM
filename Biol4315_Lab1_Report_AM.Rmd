@@ -1,5 +1,18 @@
 ---
 title: "Biol4315 Lab1 Report"
+subtitle: "Harkirn"
 output: html_document
 ---
 
+```{r, eval=FALSE}
+install.packages("vegan")
+```
+
+
+Gonna load the ggplot2 package and plot a scatter plots 4 cars:
+
+```{r}
+library(ggplot2)
+data(cars)
+ggplot(cars, aes(x = speed, y = dist)) + geom_point()
+```
